@@ -53,11 +53,11 @@ function generateMarkdown(data) {
 
 
     ## Description
-    ${data.Descripton}
+    ${data.Description}
 
 
     ## Installiation
-     ${data.Istalliation}
+     ${data.Installiation}
 
 
     ## Credits
