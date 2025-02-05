@@ -1,7 +1,7 @@
 
 
-    # Title
-     Challenge 7
+
+     Challenge Module 7
 
     
 [![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -16,7 +16,7 @@
 
 
     ## Description
-    basic readme generator
+    basic readme
 
 
     ## Installation
@@ -24,7 +24,7 @@
 
 
     ## Credits
-     not a one
+     blah
     
 
     ## license
@@ -32,19 +32,19 @@
 
 
     ## GitHub
-     [Project Repository](https://github.com/https://github.com/TiffanyMClark/Challenge-7)
+     [Project Repository](https://github.com/TiffanyMClark/Challenge-7)
 
 
     ## Features
-     No special features, just a blanket README.md that will get a setup for ease of use.
+     features here????
 
 
      
      ## Questions
 If you have any questions, feel free to reach out to me:
 
-- GitHub: [https://github.com/TiffanyMClark](https://github.com/https://github.com/TiffanyMClark)
-- Email: Tiffanymarie9811@gmail.com
+- GitHub: [https://github.com/TiffanyMClark]
+- Email: tiffanymarie9811@gmail.com
 
   
   
