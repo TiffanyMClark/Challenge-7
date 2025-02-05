@@ -16,11 +16,11 @@
 
 
     ## Description
-    ReadMe generator for future projects
+    basic readme generator
 
 
     ## Installation
-     inquirer npm i inquirer
+     inquirer
 
 
     ## Credits
@@ -36,7 +36,7 @@
 
 
     ## Features
-     It will generate a basic readme layout for you to edit as you go
+     No special features, just a blanket README.md that will get a setup for ease of use.
 
 
      
