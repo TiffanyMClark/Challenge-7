@@ -13,17 +13,17 @@ const questions = [
   },
   {
     type: "input",
-    name: "Description",
+    name: "description",
     message: "Please enter a short description about your project.",
   },
   {
     type: "input",
-    name: "Installation",
+    name: "installation",
     message: "What do you need to do to install your project?",
   },
   {
     type: "input",
-    name: "Credits",
+    name: "credits",
     message: "List your collaborators if any.",
   },
   {
@@ -39,13 +39,23 @@ const questions = [
   },
   {
     type: "input",
-    name: "GitHub",
+    name: "github.repo",
     message: "What is your GitHub URL for this project?",
   },
   {
     type: "input",
-    name: "Features",
+    name: "github.profile",
+    message: "What is your GitHub profile URL?",
+  },
+  {
+    type: "input",
+    name: "features",
     message: "List a quick feature rundown.",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your Email.",
   },
 ];
 
@@ -98,17 +108,18 @@ ${licenseBadge}
 
 
     ## GitHub
-     ${data.github}
+     [Project Repository](https://github.com/${data.github.repo})
 
 
     ## Features
-     ${data.Features}
+     ${data.features}
 
 
+     
      ## Questions
 If you have any questions, feel free to reach out to me:
 
-- GitHub: [${data.github}](https://github.com/${data.github})
+- GitHub: [${data.github.profile}](https://github.com/${data.github.profile})
 - Email: ${data.email}
 
   
@@ -144,8 +155,9 @@ init();
 // THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled license that explains which license the application is covered under
 
 // WHEN I enter my GitHub username
+// okay so i have the github link for the repo. what do i need to add and call it to do a separate profile link....
 
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile ( i have the repo ? maybe add another for the profile? can i space it does that work ?)
 
 // WHEN I enter my email address
 
