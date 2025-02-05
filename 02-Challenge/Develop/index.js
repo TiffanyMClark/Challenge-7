@@ -28,11 +28,11 @@ const questions = [
   },
   {
     type: "list",
-    name: "License",
-    message: "What License will we be using?",
+    name: "license",
+    message: "What license will we be using?",
     choices: [
       "MIT",
-      "Mozilla Public License 2.0",
+      "Mozilla Public license 2.0",
       "GNU GPL v3",
       "Not Listed, you can change it later",
     ],
@@ -53,12 +53,15 @@ const questions = [
 
 function generateMarkdown(data) {
   let licenseBadge = "";
-  if ((data, License === "MIT")) {
-    ("[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)");
-  } else if (data.License === "Mozilla Public License 2.0") {
-    ("[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)");
-  } else if (data.License === "GNU GPL v3") {
-    ("[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)");
+  if (data.license === "MIT") {
+    licenseBadge =
+      "[![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  } else if (data.license === "Mozilla Public license 2.0") {
+    licenseBadge =
+      "[![license: MPL 2.0](https://img.shields.io/badge/license-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+  } else if (data.license === "GNU GPL v3") {
+    licenseBadge =
+      "[![license: GPL v3](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
   }
 
   return `
@@ -66,36 +69,54 @@ function generateMarkdown(data) {
     # Title
      ${data.title}
 
+    
+${licenseBadge}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Credits](#credits)
+- [License](#license)
+- [GitHub](#github)
+- [Features](#features)
+- [Questions](#questions)
+
 
     ## Description
-    ${data.Description}
+    ${data.description}
 
 
     ## Installation
-     ${data.Installation}
+     ${data.installation}
 
 
     ## Credits
-     ${data.Credits}
+     ${data.credits}
     
 
-    ## License
-     ${data.License}
+    ## license
+     ${data.license}
 
 
     ## GitHub
-     ${data.GitHub}
+     ${data.github}
 
 
     ## Features
      ${data.Features}
+
+
+     ## Questions
+If you have any questions, feel free to reach out to me:
+
+- GitHub: [${data.github}](https://github.com/${data.github})
+- Email: ${data.email}
 
   
   `;
 }
 function writeToFile(fileName, data) {
   fs.writeFileSync(fileName, data, (err) =>
-    err ? console.log(err) : console.log("Your Wrote A README.md! Great Jb!")
+    err ? console.log(err) : console.log("Your Wrote A README.md! Great Job!")
   );
 }
 // TODO: Create a function to initialize app
@@ -112,15 +133,15 @@ init();
 // read me acceptance for challenge ***********
 //WHEN I am prompted for information about my application repository
 
-//THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+//THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, license, Contributing, Tests, and Questions
 
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
 
 // THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
 
-// WHEN I choose a license for my application from a list of options
+// WHEN I choose a license for my application from a list of options (YES!!)
 
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled license that explains which license the application is covered under
 
 // WHEN I enter my GitHub username
 
