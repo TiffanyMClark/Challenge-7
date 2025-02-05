@@ -39,13 +39,13 @@ const questions = [
   },
   {
     type: "input",
-    name: "github.repo",
-    message: "What is your GitHub URL for this project?",
+    name: "repo",
+    message: "What is your GitHub for this project?",
   },
   {
     type: "input",
-    name: "github.profile",
-    message: "What is your GitHub profile URL?",
+    name: "profile",
+    message: "What is your GitHub profile?",
   },
   {
     type: "input",
@@ -86,7 +86,6 @@ ${licenseBadge}
 - [Installation](#installation)
 - [Credits](#credits)
 - [License](#license)
-- [GitHub](#github)
 - [Features](#features)
 - [Questions](#questions)
 
@@ -108,7 +107,7 @@ ${licenseBadge}
 
 
     ## GitHub
-     [Project Repository](${data.github.repo})
+     [Project Repository](${data.repo})
 
 
     ## Features
@@ -119,9 +118,11 @@ ${licenseBadge}
      ## Questions
 If you have any questions, feel free to reach out to me:
 
-- GitHub: [${data.github.profile}]
+- GitHub: [${data.profile}](${data.profile})
 - Email: ${data.email}
 
+ ## GitHub Repository
+    [Project Repository](${data.repo})
   
   `;
 }
@@ -148,8 +149,6 @@ init();
 //THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, license, Contributing, Tests, and Questions
 
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled license that explains which license the application is covered under
 
 // THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions ( this works thank goodness)
 
