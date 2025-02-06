@@ -19,8 +19,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "credits",
-    message: "List your collaborators if any.",
+    name: "contributing",
+    message: "How can someone contribute",
   },
   {
     type: "input",
@@ -88,7 +88,7 @@ ${licenseBadge}
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
-- [Credits](#credits)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [License](#license)
 - [Features](#features)
@@ -106,9 +106,9 @@ ${licenseBadge}
      ${data.installation}
 
 
-    ## Credits
+    ## Contributing
 
-     ${data.credits}
+     ${data.contributing}
 
      ## Tests
 
