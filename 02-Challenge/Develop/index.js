@@ -20,7 +20,7 @@ const questions = [
   {
     type: "input",
     name: "contributing",
-    message: "How can someone contribute",
+    message: "How can someone contribute?",
   },
   {
     type: "input",
@@ -63,6 +63,11 @@ const questions = [
     name: "email",
     message: "Enter your Email.",
   },
+  {
+    type: "input",
+    name: "video",
+    message: "How do I do this?",
+  },
 ];
 
 function generateMarkdown(data) {
@@ -97,27 +102,19 @@ ${licenseBadge}
 
 
     ## Description
-    
     ${data.description}
 
-
     ## Installation
-
      ${data.installation}
 
-
     ## Contributing
-
      ${data.contributing}
 
      ## Tests
-
      ${data.tests}
-
+    
     ## license
-
      ${data.license}
-
 
     ## GitHub
 
@@ -139,6 +136,7 @@ If you have any questions, feel free to reach out to me:
 
 - GitHub: [${data.profile}](${data.profile})
 - Email: ${data.email}
+- Video: ${data.video}
   `;
 }
 function writeToFile(fileName, data) {
