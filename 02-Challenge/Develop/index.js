@@ -97,32 +97,40 @@ ${licenseBadge}
 
 
     ## Description
+    
     ${data.description}
 
 
     ## Installation
+
      ${data.installation}
 
 
     ## Credits
+
      ${data.credits}
 
      ## Tests
+
      ${data.tests}
 
     ## license
+
      ${data.license}
 
 
     ## GitHub
+
      [Project Repository](${data.repo})
 
 
     ## Features
+
      ${data.features}
 
 
-      ## Usage
+    ## Usage
+
      ${data.usage}
 
      
@@ -131,7 +139,6 @@ If you have any questions, feel free to reach out to me:
 
 - GitHub: [${data.profile}](${data.profile})
 - Email: ${data.email}
-
   `;
 }
 function writeToFile(fileName, data) {
