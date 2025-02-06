@@ -40,7 +40,7 @@ const questions = [
   {
     type: "input",
     name: "repo",
-    message: "What is your GitHub for this project?",
+    message: "What is your GitHub repo for this project?",
   },
   {
     type: "input",
@@ -55,7 +55,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "What's the usage for this.",
+    message: "What's the usage for this?",
   },
   {
     type: "input",
@@ -162,7 +162,3 @@ function init() {
 
 // Function call to initialize app
 init();
-
-// read me acceptance for challenge ***********
-
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
