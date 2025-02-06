@@ -54,6 +54,16 @@ const questions = [
   },
   {
     type: "input",
+    name: "usage",
+    message: "What's the usage for this.",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "How can you test?",
+  },
+  {
+    type: "input",
     name: "email",
     message: "Enter your Email.",
   },
@@ -85,6 +95,7 @@ ${licenseBadge}
 - [Description](#description)
 - [Installation](#installation)
 - [Credits](#credits)
+- [Tests](#tests)
 - [License](#license)
 - [Features](#features)
 - [Questions](#questions)
@@ -100,7 +111,9 @@ ${licenseBadge}
 
     ## Credits
      ${data.credits}
-    
+
+     ## Tests
+     ${data.tests}
 
     ## license
      ${data.license}
@@ -112,6 +125,14 @@ ${licenseBadge}
 
     ## Features
      ${data.features}
+
+
+      ## Usage
+     ${data.usage}
+
+
+      ## Tests
+     ${data.tests}
 
 
      
@@ -144,14 +165,4 @@ init();
 
 // read me acceptance for challenge ***********
 
-// okay the bottom links work email and my github.. but the challenge link does not and table of contents links do not.
-
-//THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, license, Contributing, Tests, and Questions
-
 // WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions ( this works thank goodness)
-
-// WHEN I click on the links in the Table of Contents ( this is issues.... its there but links are not linking)
-
-// THEN I am taken to the corresponding section of the README
