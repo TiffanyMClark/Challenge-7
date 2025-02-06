@@ -1,10 +1,6 @@
-// TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import fs from "fs";
-//const inquirer = require("inquirer");
-//const fs = require("fs");
 
-// TODO: Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -25,6 +21,11 @@ const questions = [
     type: "input",
     name: "credits",
     message: "List your collaborators if any.",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "How can you test?",
   },
   {
     type: "list",
@@ -59,17 +60,10 @@ const questions = [
   },
   {
     type: "input",
-    name: "tests",
-    message: "How can you test?",
-  },
-  {
-    type: "input",
     name: "email",
     message: "Enter your Email.",
   },
 ];
-
-// TODO: Create a function to write README file
 
 function generateMarkdown(data) {
   let licenseBadge = "";
@@ -98,6 +92,7 @@ ${licenseBadge}
 - [Tests](#tests)
 - [License](#license)
 - [Features](#features)
+- [Usage](#usage)
 - [Questions](#questions)
 
 
@@ -130,11 +125,6 @@ ${licenseBadge}
       ## Usage
      ${data.usage}
 
-
-      ## Tests
-     ${data.tests}
-
-
      
      ## Questions
 If you have any questions, feel free to reach out to me:
@@ -142,9 +132,6 @@ If you have any questions, feel free to reach out to me:
 - GitHub: [${data.profile}](${data.profile})
 - Email: ${data.email}
 
- ## GitHub Repository
-    [Project Repository](${data.repo})
-  
   `;
 }
 function writeToFile(fileName, data) {
